@@ -1,56 +1,62 @@
-# Cutthroat Carnivore Noteskin — Workshop (Beta)
+# Cutthroat Carnivore Noteskins — Official Release v1.0.0
 
-The official Cutthroat Carnivore noteskin for ITGmania, built in the open.
-This folder is the whole process: every version so far, the code that draws
-every image, the test setup, and how to give feedback that actually ships.
+The official Cutthroat Carnivore noteskins for ITGmania, built in the open.
+Every variation, the code that draws every image, the test setup, and how to
+give feedback that actually ships.
 
-**Current beta: v0.4.0 "Inferno" (Build 1, 11/22/2026)**
+**Release: v1.0.0 (Build 2, 11/22/2026)** · Default: **Voltage**
 
-![Inferno in-game](previews/v0.4-inferno-ingame-contact-sheet.png)
+![Voltage in play](previews/v1.0-voltage-in-play.png)
 
-## What it does
-- **Solid forged-metal arrows** in rhythm colours (4th red, 8th blue, 12th purple,
-  16th gold, 24th pink, 32nd orange, 48th cyan, 64th green, 192nd steel), heavy black
-  outline, burning cracks.
-- **Beat bolt:** a lightning bolt on every arrow snaps ON for the first half of each
-  beat and OFF for the second half, locked to the song's BPM (BPM changes included).
-- **Shatter:** a hit breaks the arrow into 28 iron fragments that blast out, tumble and
-  fall, with a debris storm, sparks, embers, smoke, flash and red lightning. Better
-  judgments hit harder. Fast streams stack shatters instead of cutting them off.
-- **Hyper-beam holds:** white-hot core, crimson energy, rings rushing down the beam on
-  the beat, and an energy ball charging at the receptor. Rolls are a gold helix beam.
-- Receptors flash on the beat and flare a ki aura when you step. Mines are
-  reactor orbs.
+## The official variations
+Pick any of them in ITGmania: Player Options → NoteSkin.
 
-## Try it
-1. Download the newest zip from **Releases** on GitHub (or the `builds` folder on Google Drive).
+| Name in the menu | Look |
+|---|---|
+| `cutthroat-carnivore-voltage` **(default)** | Bright, fully coloured arrows. Every rhythm has its own colour **and** its own face symbol (reads even if you're colour-blind), each direction its own edge colour, bolt strikes on the beat, shatter + lightning on the best hits, energy-beam holds |
+| `cutthroat-carnivore-voltage-red` | Black arrows, red neon frame, rhythm-coloured face |
+| `cutthroat-carnivore-voltage-pink` | Black arrows, pink neon frame, rhythm-coloured face |
+| `cutthroat-carnivore-inferno` | Dark forged-metal arrows in rhythm colours, beat bolt ON/OFF every beat, shatter into 28 iron fragments, Kamehameha hyper-beam holds |
+| `cutthroat-carnivore-inferno-cycle` | Inferno with cycling colours |
+| `cutthroat-carnivore-forged` | Hammered dark iron with energy cracks |
+| `cutthroat-carnivore-forged-cycle` | Forged with cycling colours |
+| `cutthroat-carnivore` | Glossy armour with lightning-filled faces |
+| `cutthroat-carnivore-cycle` | Glossy with cycling colours |
+
+Rhythm colours (Voltage symbols in brackets): 4th red (bolt), 8th blue (diamond),
+12th purple (triangle), 16th yellow (circle), 24th pink (hollow triangle),
+32nd orange (ring), 48th cyan (hollow diamond), 64th green (small ring), 192nd grey (dot).
+
+![All renders](previews/CC_Noteskin_All_Renders.png)
+
+## Install
+1. Download `CC-Noteskins-v1.0.0-All-Variations.zip` from **Releases** on GitHub
+   (or the Google Drive folder).
 2. Unzip it into your ITGmania `NoteSkins/dance/` folder
    (Mac: `~/Library/Application Support/ITGmania/NoteSkins/dance/`).
-3. Restart ITGmania → Player Options → NoteSkin → `cutthroat-carnivore-inferno`
-   (rhythm colours) or `cutthroat-carnivore-inferno-cycle` (cycling colours).
+3. Restart ITGmania → Player Options → NoteSkin. The Cutthroat Carnivore theme
+   uses Voltage by default.
 
 ## How it's made (honest version)
 - Every image is **drawn by code** — math (distance fields, lighting, procedural
-  noise and lightning). No AI image generator, and no art taken from anyone else's
-  noteskin.
-- The code was written by **Claude (Anthropic's AI)** working under Cutthroat
-  Carnivore's direction: he calls the look, tests it, and approves or rejects every
-  version. The whole back-and-forth is in `DEVLOG.md`.
-- Engine side is plain StepMania 5 / ITGmania noteskin Lua (`source/skin-lua/`).
+  noise and lightning). No AI image generator, no art taken from anyone else's skin.
+- The code was written by **Claude (Anthropic's AI)** under Cutthroat Carnivore's
+  direction: he calls the look, plays it, and approves or rejects every version.
+  Voltage came from the NotITGmania Cutthroat Carnivore Edition build; Inferno,
+  Forged and Glossy from the noteskin workshop. The full story is in `DEVLOG.md`.
+- Engine side is plain StepMania 5 / ITGmania noteskin Lua.
 - Look inspiration: Peter Lawrence's public-domain noteskins
   (https://github.com/Pete-Lawrence/Peters-Noteskins) — idea only, none of their files.
 
 ## Folder map
 | Folder | What's inside |
 |---|---|
-| `builds/` | Installable zips of every version (both colour modes each) |
-| `previews/` | Mockups and in-game screenshots from each version |
-| `source/scripts/` | Python that draws every texture and assembles the skin |
-| `source/skin-lua/` | The noteskin Lua (router, receptor, notes, explosions) |
+| `previews/` | Render sheet, mockups and in-game screenshots |
+| `source/voltage/` | Voltage generator (`gen_voltage.py`) + its Lua |
+| `source/scripts/` | Inferno / Forged / Glossy generators + assembler |
+| `source/skin-lua/` | Inferno / Forged / Glossy noteskin Lua |
 | `source/test-lab/` | Autoplay test theme + test chart used to check every build |
-| `DEVLOG.md` | How it evolved, what got rejected and why |
-| `PATCH_NOTES.md` | What changed in each version |
-| `FEEDBACK.md` | What to test, how to report, and the credits list |
+| `DEVLOG.md` · `PATCH_NOTES.md` · `FEEDBACK.md` | History, changes, how to help + credits |
 
 ## Use it however you want
 Free to use, share, edit and remix — part of the Cutthroat Carnivore movement.

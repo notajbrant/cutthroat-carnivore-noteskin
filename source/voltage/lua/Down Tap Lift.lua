@@ -1,0 +1,20 @@
+-- Lift note: see-through body, same rhythm and direction colours as taps.
+local COL = {
+	Left = { 0.88, 0.32, 1.0 }, Down = { 0.12, 0.86, 1.0 }, Up = { 1, 1, 1 }, Right = { 1.0, 0.55, 0.08 },
+	UpLeft = { 0.88, 0.32, 1.0 }, UpRight = { 1.0, 0.55, 0.08 },
+	DownLeft = { 0.12, 0.86, 1.0 }, DownRight = { 1, 1, 1 }, Center = { 1.0, 0.9, 0.2 },
+}
+local c = { 1, 1, 1 }
+pcall(function() c = COL[Var "Button"] or c end)
+
+return Def.ActorFrame {
+	Def.Sprite {
+		Texture = NOTESKIN:GetPath("_CC", "Tap Lift"),
+		Frames = Sprite.LinearFrames(4, 1),
+	},
+	Def.Sprite {
+		Texture = NOTESKIN:GetPath("_CC", "Tap Rim"),
+		Frames = Sprite.LinearFrames(4, 1),
+		InitCommand = function(self) self:diffuse(c[1], c[2], c[3], 1) end,
+	},
+}

@@ -1,5 +1,17 @@
 # Patch notes
 
+## v1.0.0 — Official Release (Build 2, 11/22/2026)
+- **Voltage is the official default** in the Cutthroat Carnivore theme and in
+  NotITGmania Cutthroat Carnivore Edition.
+- All 9 variations ship together and are switchable in Player Options → NoteSkin:
+  Voltage, Voltage Red, Voltage Pink, Inferno, Inferno Cycle, Forged, Forged Cycle,
+  Glossy, Glossy Cycle.
+- New: Voltage — fully coloured arrows, a face symbol per rhythm (colour-blind
+  friendly), edge colour per direction, receptor beat bolt (beat 1 hits harder),
+  shatter + lightning on the best judgments, energy-beam holds, lightning rolls.
+- Inferno: thicker hyper-beam core and energy band.
+- Source for every variation is in this repo.
+
 ## v0.4.0 "Inferno" — Beta Build 1 (11/22/2026)
 - New: solid forged-metal arrows in rhythm colours with a heavy black outline.
 - New: beat bolt — ON for the first half of every beat, OFF for the second half.

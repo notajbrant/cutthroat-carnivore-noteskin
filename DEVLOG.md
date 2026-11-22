@@ -44,5 +44,13 @@ Inspiration: Peter Lawrence's solid, filled skins. CC's direction:
 Also borrowed one idea from Peter's credits: overlapping explosions, so every
 column has 3 rotating burst slots and fast streams stack shatters.
 
+### v1.0.0 — Voltage joins, official release (11/22/2026)
+While the NotITGmania Cutthroat Carnivore Edition was being built, a second
+design came out of it: **Voltage** — bright, fully coloured arrows with a symbol
+per rhythm so they read even without colour. It won the in-game playtest, so it
+became the default. CC's call: ship every design as an official variation and let
+players pick.
+![Voltage](previews/v1.0-voltage-all-variants.png)
+
 **Next:** community feedback (see `FEEDBACK.md`), then the release candidate goes into
 NotITGmania Cutthroat Carnivore Edition as the official skin.
